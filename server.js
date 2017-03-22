@@ -6,7 +6,7 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app = config(app);
 
-mongoose.connect('mongodb://localhost/imgPloadr');
+mongoose.connect('mongodb://admin:nPDy8OodkJ9K@db2.daocloudinternal.io:60232/temp_db');
 mongoose.connection.on('open', function() {
     console.log('Mongoose connected.');
 });
